@@ -923,7 +923,7 @@ client.on('message', message => {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
 			      .addField('``My Prefix``' , `[ - ]` , true)
 			      .addField('``My Language``' , `[ Java Script ]` , true)
-			      .setFooter('By | ITz1uKY')
+			      .setFooter('By Zeyad And IM_AliGamer_YT')
     })
 }
 });
