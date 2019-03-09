@@ -2149,7 +2149,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("538841860160880654","538841860160880654").send(
+client.users.get("546457241386090496","538841860160880654").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -2161,7 +2161,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By ITz1uKY")
+     .setFooter("By Zeyad And IM_AliGamer_YT")
                                                 
 
 message.channel.send(embed);
