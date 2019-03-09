@@ -188,7 +188,8 @@ client.on("message", message => {
       .setDescription(`
 	  
 	         Please Chose: 
-			 
+موقع بوت 
+https://legendsystem.wixsite.com/website			 
 ${prefix}help public ⇏ اوامر عامة
 ${prefix}help admin ⇏ اوامر ادارة السيرفر
 			 
@@ -339,7 +340,7 @@ client.on('guildCreate', guild => {
   .setDescription(`**
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("406877114936197120").sendEmbed(embed)
+client.channels.get("546457241386090496").sendEmbed(embed)
 });
 
 client.on('guildDelete', guild => {
@@ -351,7 +352,7 @@ client.on('guildDelete', guild => {
   Server Kicked Legend System :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("406877114936197120").sendEmbed(embed)
+client.channels.get("538841860160880654").sendEmbed(embed)
 });
  
 
@@ -2972,7 +2973,7 @@ client.on('message',async message => {
       if(system[author.id].clan === 'None') return message.channel.send("**# يجب ان تكون بكلان لأستخدام هذا الأمر**");
       if(clans[system[author.id].clan].creator !== message.author.id) return message.channel.send("**# يجب أن تكون صاحب الكلان لأستخدام هذا الأمر**");
       if(message.guild.channels.find(r => r.name.toLowerCase() === system[author.id].clan && r.type === 'text') || message.guild.channels.find(r => r.name === system[author.id].clan && r.type === 'voice')) return message.channel.send("**# الكلان لديه روم بالفعل**");
-      let id = '487721170687229977';
+      let id = '546457241386090496';
       let m = await message.channel.send("**# اكتب نوع الروم الان\n\n - `كتابي`\n - `صوتي`**");
       let awaited = await message.channel.awaitMessages(r => r.author.id === message.author.id, {max: 1, time: 20000, errors:['time']}).then(c => {
         let collected = c.first();
