@@ -188,8 +188,7 @@ client.on("message", message => {
       .setDescription(`
 	  
 	         Please Chose: 
-موقع بوت 
-https://legendsystem.wixsite.com/website			 
+		 
 ${prefix}help public ⇏ اوامر عامة
 ${prefix}help admin ⇏ اوامر ادارة السيرفر
 			 
