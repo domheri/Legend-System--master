@@ -188,7 +188,9 @@ client.on("message", message => {
       .setDescription(`
 	  
 	         Please Chose: 
-		 
+			 
+موقع بوت 
+https://legendsystem.wixsite.com/website			 
 ${prefix}help public ⇏ اوامر عامة
 ${prefix}help admin ⇏ اوامر ادارة السيرفر
 			 
@@ -214,7 +216,6 @@ client.on("message", message => {
 ❖=allbots ~ لعرض جميع البوتات الي بالسيرفر
 ❖=server ~يعرض لك معلومات عن السيرفر
 ❖=bot ~ يعرض لك كل معلومات البوت
-❖=skin <name> ~ يعرض لك سكنك بماين كرافت
 ❖=count ~ يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
 ❖=invites ~ يعرض لك  عدد انفايتاتك بالسيرفر 
 ❖=invite-codes ~ يعرض لك روابط الانفايتات حكك في السيرفر 
@@ -265,7 +266,6 @@ client.on("message", message => {
 ❖=role bots <rank> ~ لأعطاء رتبة لجميع البوتات
 ❖=hc ~ اخفاء الشات
 ❖=sc ~ اضهار الشات المخفية
-❖=clr <numbr> ~ مسح الشات بعدد
 ❖=clear ~ مسح الشات
 ❖=mute @user <reason> ~ اعطاء العضو ميوت لازم رتبة <Muted>
 ❖=unmute @user ~ لفك الميوت عن الشخص 
@@ -296,7 +296,6 @@ client.on("message", message => {
 ❖=rps ~ حجر ورقة مقص
 ❖=speed ~ اسرع كتابة
 ❖=quas ~ اسئلة عامة
-❖=نكت ~ نكت 
 ❖=لعبة فكك ~ فكك
 ❖=عواصم عشوائية ~ عواصم
 ❖=لعبة كت تويت ~ كت تويت
@@ -707,7 +706,7 @@ if(ra3d.content.startsWith(prefix + 'ccolors')) {
 
 client.on('message', message => {
 var prefix = "=";
-var cats = ["http://www.shuuf.com/shof/uploads/2015/09/09/jpg/shof_b9d73150f90a594.jpg","https://haltaalam.info/wp-content/uploads/2015/05/0.208.png","https://haltaalam.info/wp-content/uploads/2015/05/266.png","https://haltaalam.info/wp-content/uploads/2015/05/250.png","https://haltaalam.info/wp-content/uploads/2017/02/0.2517.png","https://pbs.twimg.com/media/CP0mi02UAAA3U2z.png","http://www.shuuf.com/shof/uploads/2015/08/31/jpg/shof_3b74fa7295ec445.jpg","http://www.shuuf.com/shof/uploads/2015/08/22/jpg/shof_fa3be6ab68fb415.jpg","https://pbs.twimg.com/media/CSWPvmRUcAAeZbt.png","https://pbs.twimg.com/media/B18VworIcAIMGsE.png"]
+var cats = ["http://www.shuuf.com/shof/uploads/2015/09/09/jpg/shof_b9d73150f90a594.jpg","https://haltaalam.info/wp-content/uploads/2015/05/0.208.png","https://haltaalam.info/wp-content/uploads/2015/05/266.png","https://haltaalam.info/wp-content/uploads/2015/05/250.png","https://haltaalam.info/wp-content/uploads/2017/02/0.2517.png","https://pbs.twimg.com/media/CP0mi02UAAA3U2z.png","http://www.shuuf.com/shof/uploads/2015/08/31/jpg/shof_3b74fa7295ec445.jpg","http://www.shuuf.com/shof/uploads/2015/08/22/jpg/shof_fa3be6ab68fb415.jpg","https://pbs.twimg.com/media/CSWPvmRUcAAeZbt.png","https://pbs.twimg.com/media/B18VworIcAIMGsE.png","https://cdn.discordapp.com/attachments/552860518109544482/557170202450722816/1.png","https://cdn.discordapp.com/attachments/552860518109544482/557170577681678357/9k.png","https://cdn.discordapp.com/attachments/552860518109544482/557170756929191946/5a6b5cb3f5f43adea8eb6ecd992bd8bb--culture-info.png]
         var args = message.content.split(" ").slice(1);
     if(message.content.startsWith(prefix + 'هل تعلم')) {
          var cat = new Discord.RichEmbed()
@@ -928,18 +927,6 @@ client.on('message', message => {
 }
 });
 
-client.on("message", message => {
-    var prefix = "="
-    if (!message.content.startsWith(prefix)) return;
-      let command = message.content.split(" ")[0];
-      command = command.slice(prefix.length);
-        if(command === "skin") {
-                const args = message.content.split(" ").slice(1).join(" ")
-        if (!args) return message.channel.send("** Type your skin name **");
-        const image = new Discord.Attachment(`https://visage.surgeplay.com/full/256/${args}`, "skin.png");
-    message.channel.send(image)
-        }
-    });
 
 client.on("guildMemberAdd", member => {
 let welcomer = member.guild.channels.find("chicago");
@@ -1495,7 +1482,7 @@ msg.channel.send(embed).then(() => {
 
 client.on('ready', function(){	
     var ms = 40000 ;	
-    var setGame = ['Chicago Server'];	
+    var setGame = ['=help | Legend System ✨'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
@@ -1781,16 +1768,7 @@ client.on('guildCreate', guild => {
       guild.owner.send(embed)
 });
 
-    client.on('message', message => {
-var prefix = "=";
-var cats = ["http://palestine-kitchen.ps/wp-content/uploads/2017/12/%D9%86%D9%83%D8%AA-%D8%AF%D8%A8%D8%A7%D9%86%D8%A9.png","http://www.i7lm.com/wp-content/uploads/2017/04/136769797816.jpg","https://4.bp.blogspot.com/-p62zmDIDXmI/WKzqNt9smaI/AAAAAAAAC4Q/sW_bSIB8OaQhwOYFeplc3uzz8PBN7l3YACEw/s1600/13602501135.jpg","https://www.universemagic.com/images/2016/03/7938-2-or-1457539273.jpg","https://1.bp.blogspot.com/-yFk-FzHSyE8/WR9fmPcsCUI/AAAAAAAAE6c/AmvjLadOiLY9GiCqMLHgA121bY2RS_dCwCLcB/s1600/%25D9%2586%25D9%2583%25D8%25AA%2B%25D9%2585%25D8%25B6%25D8%25AD%25D9%2583%25D8%25A9%2B1.jpg","https://l7zaat.com/wp-content/uploads/2018/02/423.jpg","https://www.petfinder.com/wp-content/uploads/2012/11/101438745-cat-conjunctivitis-causes.jpg","https://i.fatafeat.com/storage/attachments/15/image3_698123_large.jpg","http://www.shuuf.com/shof/uploads/2018/02/08/jpg/shof_97d686082bdb0a2.jpg"];
-        var args = message.content.split(" ").slice(1);
-    if(message.content.startsWith(prefix + 'نكت')) {
-         var cat = new Discord.RichEmbed()
-.setImage(cats[Math.floor(Math.random() * cats.length)])
-message.channel.sendEmbed(cat);
-    }
-});
+
 var fkk =[
         {f:"فكك بسم الله الرحمن الرحيم",k:"ب س م ا ل ل ه ا ل ر ح م ن ا ل ر ح ي م"},
         {f:"فكك باص",k:"ب ا ص"},
